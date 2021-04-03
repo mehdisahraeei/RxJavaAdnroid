@@ -4,21 +4,29 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.os.Bundle;
+import android.widget.Toast;
+
 import com.project.Adapters.AdapterMain;
+import com.project.Adapters.Api;
 import com.project.R;
 import com.project.databinding.ActivityMainBinding;
-import com.project.model.Main;
 import com.project.viewmodel.Mainmodel;
-import java.util.ArrayList;
+
 import java.util.List;
+
+import io.reactivex.rxjava3.annotations.NonNull;
+import io.reactivex.rxjava3.core.Observer;
+import io.reactivex.rxjava3.disposables.Disposable;
 
 
 public class MainActivity extends AppCompatActivity {
 
     private ActivityMainBinding binding;
     private RecyclerView recyclerView;
-    private List<Mainmodel> list;
+    private Api api;
+    private Observer<List<Mainmodel>> observer;
 
 
     @Override
@@ -26,23 +34,36 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main);
 
-
         recyclerView = findViewById(R.id.recyclerview1);
-        recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
-        list = new ArrayList<>();
-        InsertOne();
+        api = new Api();
+        api.listPost();
 
-        recyclerView.setAdapter(new AdapterMain(list));
+
+        observer = new Observer<List<Mainmodel>>() {
+            @Override
+            public void onSubscribe(@NonNull Disposable d) {
+                //------Disposable d==Subscribes-------------
+                Toast.makeText(MainActivity.this, d.toString(), Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNext(@NonNull List<Mainmodel> mainmodels) {
+                recyclerView.setLayoutManager(new LinearLayoutManager(MainActivity.this));
+                recyclerView.setAdapter(new AdapterMain(mainmodels));
+            }
+
+            @Override
+            public void onError(@NonNull Throwable e) {
+
+            }
+
+            @Override
+            public void onComplete() {
+
+            }
+        };
+        api.observable.subscribe(observer);
 
 
     }
-
-
-    public void InsertOne() {
-        list.add(new Mainmodel(new Main("camera", "one")));
-        list.add(new Mainmodel(new Main("plus", "two")));
-        list.add(new Mainmodel(new Main("clock", "three")));
-    }
-
-
 }
