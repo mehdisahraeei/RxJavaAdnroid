@@ -9,7 +9,18 @@
         android:roundIcon="@drawable/bdpagepro"
         android:supportsRtl="true"
         android:theme="@style/Theme.RxjavaAdnroid">
-        <activity android:name=".Repo.main.MainActivity">
+        <activity
+            android:name=".Repo.main.RangeActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Repo.main.JustActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Repo.main.CreateActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Repo.main.MainActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
