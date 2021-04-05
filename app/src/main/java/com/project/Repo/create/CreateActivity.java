@@ -56,7 +56,7 @@ public class CreateActivity extends AppCompatActivity {
         observer = new Observer<List<Mainmodel>>() {
             @Override
             public void onSubscribe(@NonNull Disposable d) {
-
+                //------Disposable d==Subscribes-------------
             }
 
             @Override
