@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxjavaAdnroid">
         <activity
-            android:name=".Repo.main.RangeActivity"
+            android:name=".Repo.range.RangeActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".Repo.main.JustActivity"
+            android:name=".Repo.Just.JustActivity"
             android:screenOrientation="portrait" />
         <activity
-            android:name=".Repo.main.CreateActivity"
+            android:name=".Repo.create.CreateActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".Repo.main.MainActivity"

@@ -4,18 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 import com.project.Adapters.AdapterMain;
 import com.project.Adapters.Api;
 import com.project.R;
+import com.project.Repo.Just.JustActivity;
+import com.project.Repo.create.CreateActivity;
+import com.project.Repo.range.RangeActivity;
 import com.project.databinding.ActivityMainBinding;
 import com.project.viewmodel.ClickMainActivity;
 import com.project.viewmodel.Mainmodel;
-
 import java.util.List;
 import io.reactivex.rxjava3.annotations.NonNull;
 import io.reactivex.rxjava3.core.Observer;
@@ -37,21 +37,19 @@ public class MainActivity extends AppCompatActivity {
         binding.setMain1(new ClickMainActivity() {
             @Override
             public void ClickMainActivity1(View view) {
-                startActivity(new Intent(MainActivity.this,JustActivity.class));
+                startActivity(new Intent(MainActivity.this, JustActivity.class));
             }
 
             @Override
             public void ClickMainActivity2(View view) {
-                startActivity(new Intent(MainActivity.this,CreateActivity.class));
+                startActivity(new Intent(MainActivity.this, CreateActivity.class));
             }
 
             @Override
             public void ClickMainActivity3(View view) {
-                startActivity(new Intent(MainActivity.this,RangeActivity.class));
+                startActivity(new Intent(MainActivity.this, RangeActivity.class));
             }
         });
-
-
 
 
         recyclerView = findViewById(R.id.recyclerview1);
