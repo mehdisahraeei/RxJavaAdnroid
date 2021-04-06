@@ -10,4 +10,6 @@ public interface ClickMainActivity {
 
     public void ClickMainActivity3(View view);
 
+    public void ClickMainActivity4(View view);
+
 }

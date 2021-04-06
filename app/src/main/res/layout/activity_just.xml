@@ -7,7 +7,27 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/bdpagepro"
         tools:context=".Repo.Just.JustActivity">
+
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="156dp"
+            android:gravity="center"
+            android:text="Just"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

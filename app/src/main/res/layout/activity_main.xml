@@ -5,6 +5,7 @@
 
 
     <data>
+
         <variable
             name="main1"
             type="com.project.viewmodel.ClickMainActivity" />
@@ -31,8 +32,8 @@
         <Button
             android:id="@+id/btn1"
             android:layout_width="100dp"
-            android:layout_height="66dp"
-            android:layout_marginBottom="40dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="28dp"
             android:onClick="@{(v) -> main1.ClickMainActivity1(v)}"
             android:text="just"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -43,8 +44,8 @@
         <Button
             android:id="@+id/btn2"
             android:layout_width="100dp"
-            android:layout_height="66dp"
-            android:layout_marginBottom="40dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="28dp"
             android:onClick="@{(v) -> main1.ClickMainActivity2(v)}"
             android:text="Create"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -52,19 +53,53 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btn1" />
 
-
-
         <Button
             android:id="@+id/btn3"
             android:layout_width="100dp"
-            android:layout_height="66dp"
-            android:layout_marginBottom="40dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="28dp"
             android:onClick="@{(v) -> main1.ClickMainActivity3(v)}"
             android:text="Range"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/btn2" />
+
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="14dp"
+            android:onClick="@{(v) -> main1.ClickMainActivity4(v)}"
+            android:text="flowable"
+            android:textSize="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn1"
+            app:layout_constraintEnd_toStartOf="@+id/btn6"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btn5"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="14dp"
+            android:text="- - - -"
+            app:layout_constraintBottom_toTopOf="@+id/btn3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn6" />
+
+        <Button
+            android:id="@+id/btn6"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginBottom="14dp"
+            android:text="- - - -"
+            app:layout_constraintBottom_toTopOf="@+id/btn2"
+            app:layout_constraintEnd_toStartOf="@+id/btn5"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn4" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

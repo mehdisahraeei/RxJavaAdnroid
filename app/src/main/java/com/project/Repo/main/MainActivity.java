@@ -12,6 +12,7 @@ import com.project.Adapters.Api;
 import com.project.R;
 import com.project.Repo.Just.JustActivity;
 import com.project.Repo.create.CreateActivity;
+import com.project.Repo.flowable.FlowableActivity;
 import com.project.Repo.range.RangeActivity;
 import com.project.databinding.ActivityMainBinding;
 import com.project.viewmodel.ClickMainActivity;
@@ -49,6 +50,13 @@ public class MainActivity extends AppCompatActivity {
             public void ClickMainActivity3(View view) {
                 startActivity(new Intent(MainActivity.this, RangeActivity.class));
             }
+
+
+            @Override
+            public void ClickMainActivity4(View view) {
+                startActivity(new Intent(MainActivity.this, FlowableActivity.class));
+            }
+
         });
 
 

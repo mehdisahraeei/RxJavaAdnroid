@@ -10,6 +10,23 @@
         android:background="@drawable/bdpagepro"
         tools:context=".Repo.range.RangeActivity">
 
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_marginStart="157dp"
+            android:layout_marginTop="83dp"
+            android:layout_marginEnd="156dp"
+            android:gravity="center"
+            android:text="Range"
+            android:textColor="@color/black"
+            android:textSize="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 

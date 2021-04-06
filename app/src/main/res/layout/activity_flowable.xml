@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@drawable/bdpagepro"
-        tools:context=".Repo.create.CreateActivity">
+        tools:context=".Repo.flowable.FlowableActivity">
 
 
         <TextView
@@ -18,14 +18,12 @@
             android:layout_marginTop="83dp"
             android:layout_marginEnd="156dp"
             android:gravity="center"
-            android:text="Create"
+            android:text="flowable"
             android:textColor="@color/black"
             android:textSize="35dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
