@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxjavaAdnroid">
         <activity
-            android:name=".Repo.flowable.FlowableActivity"
+            android:name=".Repo.interval.IntervalActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Repo.flowable.FlowableActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Repo.range.RangeActivity"
             android:screenOrientation="portrait" />

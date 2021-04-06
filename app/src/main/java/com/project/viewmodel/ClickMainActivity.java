@@ -12,4 +12,6 @@ public interface ClickMainActivity {
 
     public void ClickMainActivity4(View view);
 
+    public void ClickMainActivity5(View view);
+
 }

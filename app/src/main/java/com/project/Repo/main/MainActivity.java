@@ -4,20 +4,25 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
 import com.project.Adapters.AdapterMain;
 import com.project.Adapters.Api;
 import com.project.R;
 import com.project.Repo.Just.JustActivity;
 import com.project.Repo.create.CreateActivity;
 import com.project.Repo.flowable.FlowableActivity;
+import com.project.Repo.interval.IntervalActivity;
 import com.project.Repo.range.RangeActivity;
 import com.project.databinding.ActivityMainBinding;
 import com.project.viewmodel.ClickMainActivity;
 import com.project.viewmodel.Mainmodel;
+
 import java.util.List;
+
 import io.reactivex.rxjava3.annotations.NonNull;
 import io.reactivex.rxjava3.core.Observer;
 import io.reactivex.rxjava3.disposables.Disposable;
@@ -55,6 +60,12 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void ClickMainActivity4(View view) {
                 startActivity(new Intent(MainActivity.this, FlowableActivity.class));
+            }
+
+
+            @Override
+            public void ClickMainActivity5(View view) {
+                startActivity(new Intent(MainActivity.this, IntervalActivity.class));
             }
 
         });
