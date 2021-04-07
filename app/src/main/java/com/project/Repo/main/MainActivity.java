@@ -17,6 +17,7 @@ import com.project.Repo.create.CreateActivity;
 import com.project.Repo.flowable.FlowableActivity;
 import com.project.Repo.interval.IntervalActivity;
 import com.project.Repo.range.RangeActivity;
+import com.project.Repo.timer.TimerActivity;
 import com.project.databinding.ActivityMainBinding;
 import com.project.viewmodel.ClickMainActivity;
 import com.project.viewmodel.Mainmodel;
@@ -66,6 +67,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void ClickMainActivity5(View view) {
                 startActivity(new Intent(MainActivity.this, IntervalActivity.class));
+            }
+
+            @Override
+            public void ClickMainActivity6(View view) {
+                startActivity(new Intent(MainActivity.this, TimerActivity.class));
             }
 
         });

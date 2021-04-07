@@ -1,10 +1,7 @@
 package com.project.viewmodel;
 
 
-import android.view.View;
-
 import androidx.databinding.BaseObservable;
-
 import com.project.model.Main;
 
 public class Mainmodel extends BaseObservable {
