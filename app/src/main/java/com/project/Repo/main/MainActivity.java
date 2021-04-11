@@ -14,6 +14,7 @@ import com.project.Adapters.Api;
 import com.project.R;
 import com.project.Repo.Just.JustActivity;
 import com.project.Repo.create.CreateActivity;
+import com.project.Repo.filter.FilterActivity;
 import com.project.Repo.flowable.FlowableActivity;
 import com.project.Repo.from.FromActivity;
 import com.project.Repo.interval.IntervalActivity;
@@ -78,6 +79,11 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void ClickMainActivity7(View view) {
                 startActivity(new Intent(MainActivity.this, FromActivity.class));
+            }
+
+            @Override
+            public void ClickMainActivity8(View view) {
+                startActivity(new Intent(MainActivity.this, FilterActivity.class));
             }
 
         });

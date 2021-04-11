@@ -10,8 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RxjavaAdnroid">
         <activity
-            android:name=".Repo.from.FromActivity"
+            android:name=".Repo.filter.FilterActivity"
             android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".Repo.from.FromActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Repo.timer.TimerActivity"
             android:screenOrientation="portrait" />

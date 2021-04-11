@@ -18,4 +18,6 @@ public interface ClickMainActivity {
 
     public void ClickMainActivity7(View view);
 
+    public void ClickMainActivity8(View view);
+
 }
